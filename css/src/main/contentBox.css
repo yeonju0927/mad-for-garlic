@@ -1,5 +1,5 @@
 /*contentBox.css*/
-#contentBox {width: 100%; height: auto; margin-bottom: 30px; margin-bottom: 1.875rem;}
+#contentBox {width: 100%; height: auto; margin-bottom: 3rem;}
 
 .event_card {margin: auto; width: 700px; width: 43.75rem; height: 180px; height: 11.25rem; margin-bottom: 50px; margin-bottom: 3.125rem;}
 .event_card > li {float: left; margin-right: 100px; margin-right: 6.25rem;  width: 300px; width: 18.75rem; height: inherit; /*background-color: #ccc;*/ background-repeat: no-repeat; background-size: contain; background-position: center;}

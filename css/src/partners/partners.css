@@ -1,11 +1,11 @@
 /*mfgarlic_partners.css*/
-#wrap {width: 100%; height: auto; background-image: url("../../../img/partners/silver_pc.png");background-repeat: no-repeat; background-size: cover;}
+#wrap {width: 100%; height: auto; background-image: url("../../../img/partners/silver_bgc_pc.png");background-repeat: no-repeat; background-size: cover;}
 
-#partners_Membership {margin: auto; width: 950px; width: 69.546120vw; height: auto; padding-top: 180px; padding-top: 11.25rem;}
+#partners_Membership {margin: auto; width: 950px; width: 69.546120vw; height: auto; padding-top: 180px; padding-top: 11.25rem; margin-bottom: 3rem;}
 
 #membership_banner {width: 100%; height: 338px; height: 21.125rem;  /* height: 24.743777vw; */ background-image: url("../../../img/partners/gift.png"); background-size: cover; background-repeat: no-repeat; margin-bottom: 2rem;}
 #membership_banner > p {padding: 120px 60px; padding: 7.5rem 3.75rem; text-align: left; width: 320px; width: 23.426061vw; height: 126px; height: 9.224011vw; font-size: 1.8rem; line-height: 200%; word-break: keep-all; color: #fff; }
-table {width: 100%; height: 654px; height: 40.875rem; margin-bottom: 3rem; box-shadow: 1px 1px 3px 1px #333;}
+table {width: 100%; height: 654px; height: 40.875rem; box-shadow: 1px 1px 3px 1px #333;}
 .card_img {width: 30%;}
 .discount_percent {width: 20%;}
 .text_expln {width: 50%;}

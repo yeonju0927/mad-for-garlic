@@ -3,7 +3,7 @@
 /*mobile(max-width:280px)*/
 @media screen and (max-width:280px) { 
 
-#menuBox {width: 100%; height: auto; padding-top: 88px; padding-top: 5.5rem; margin-bottom: 15px;}
+#menuBox {width: 100%; height: auto; padding-top: 88px; padding-top: 5.5rem; margin-bottom: 2rem;}
 .menu_banner {width: 100%; height: 260px; height: 54.166666vw; margin-bottom: 15px; background-size: contain; background-image: url("../../../img/menu/banner_march_mobile.jpg");}
 
 

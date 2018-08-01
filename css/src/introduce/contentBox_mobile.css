@@ -5,7 +5,7 @@
 
 #wrap {background-image: none;}
 
-.introBox {padding-top: 88px; padding-top: 5.5rem; width: 100%;}
+.introBox {padding-top: 88px; padding-top: 5.5rem; width: 100%; margin-bottom: 2rem;}
 .introBox > p {width: 100%; height: auto; min-height: 8.75rem;  margin-bottom: 0; font-size: 1rem; margin:0; border: 0; padding: 1.2rem; box-sizing: border-box; line-height: 200%; margin-bottom: 1rem; background-color: #fff;}
 .h3_area {/* margin-bottom: 15px; margin-bottom: 0.9375rem; */ height: auto;}
 .h3_area > .gIcon {display:  none;}
@@ -22,7 +22,7 @@
 @media screen and (min-width:281px) and (max-width: 480px) {
 
 #wrap {background-image: none;}
-.introBox {padding-top: 88px; padding-top: 5.5rem; width: 100%;}
+.introBox {padding-top: 88px; padding-top: 5.5rem; width: 100%; margin-bottom: 2rem;}
 .introBox > p {width: 100%; height: 120px; /* min-height: 8.75rem; */  margin-bottom: 0; font-size: 1rem; margin:0; border: 0; padding: 1.5rem 0.5rem; box-sizing: border-box;  background-color: #fff; }
 .h3_area {margin-bottom: 0; height: 180px;}
 .h3_area > .gIcon {display:  none;}

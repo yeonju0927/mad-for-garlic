@@ -1,11 +1,11 @@
 /*contentBox_tablet(min-width:481px) and (max-width:768px)*/
 @media screen and (min-width:481px) and (max-width:768px) {
-  #contentBox {margin: auto;  /*width: 704px; width: 91.666666vw;*/ width: 80%;  height: auto;margin-bottom: 15px; margin-bottom: 0.9375rem;}
+  #contentBox {margin: auto;  /*width: 704px; width: 91.666666vw;*/ width: 80%;  height: auto; margin-bottom: 2rem;}
   .event_card {width: 90%; margin-bottom: 0;}
   .event_card > li {width: 40%; height: 146px; margin-right: 20%;}
 
-  .shortcut {width: 100%; height: 100%;}
-  .shortcut > li {width: 30%; height: 30%; /*width: 28.90625vw; height: 28.90625vw;*/  margin-right: 5%; /*margin-right: 0.625rem;*/ padding:3.125rem 0.625rem 3.125rem 0.625rem; box-sizing: border-box;}
+  .shortcut {width: 100%; height: auto;}
+  .shortcut > li {width: 30%; height: 220px; height: 28.645833vw; /*width: 28.90625vw; height: 28.90625vw;*/  margin-right: 5%; /*margin-right: 0.625rem;*/ padding:3.125rem 0.625rem 3.125rem 0.625rem; box-sizing: border-box;}
   .shortcut > li:nth-child(1) {background-image: url("../../../img/contentBox/membership_join_tablet.png"); }
   .shortcut > li:nth-child(2) {background-image: url("../../../img/contentBox/view_menu_tablet.png"); }
   .shortcut > li:nth-child(3) {background-image: url("../../../img/contentBox/find_store_tablet.png"); background-color: #fff;}

@@ -1,6 +1,7 @@
 /*partners_pcfull.css(min-width:1367px)*/
 @media screen and (min-width:1367px) { 
 
+#wrap {background-image: url("../../../img/partners/silver_bgc_pcfull.png");}
 #partners_Membership {max-width: 950px; max-width: 59.375rem;}
 #membership_banner > p {font-size: 1.5rem;}
 #mobile_table {display: none;}

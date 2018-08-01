@@ -1,6 +1,7 @@
 /*mobile*/
 @media screen and (max-width:459px) {
 
+#wrap {background-image: url("../../../img/partners/silver_bgc.png"); background-size: cover;}
 
 #partners_Membership {margin: auto; width: 100%; height: auto; padding-top: 88px; padding-top: 5.5rem; margin-bottom: 2rem;}
 

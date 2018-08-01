@@ -3,7 +3,7 @@
 #wrap {width: 100%; height: auto; background-image: url("../../../img/menu/wood_table_bgi.png"); background-repeat: no-repeat; background-size: cover;}
 
 /*---------------------------------------------------------------------------------------------*/
-#menuBox {margin: auto; padding-top: 180px; padding-top: 11.25rem; width: 950px; width: 69.546120vw; height: auto;}
+#menuBox {margin: auto; padding-top: 180px; padding-top: 11.25rem; width: 950px; width: 69.546120vw; height: auto; margin-bottom: 3rem;}
 .menu_banner {width: 100%; height: 343px; height: 25.109809vw; margin-bottom: 2rem; background-image: url("../../../img/menu/banner_march.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
 .big_image {position: relative; width: 100%; height: 486px; height: 35.578330vw; margin-bottom: 3rem; background-repeat: no-repeat; background-size: contain;}
 .big_image.active:before {display: block; content: " "; width: 100%; height: 100%; background-color: rgba(31,31,31,0.6);}
@@ -14,7 +14,7 @@
 
 
 
-#mini_menu_wrap {width: 100%; height: 240px; height: 15rem; margin-bottom: 3rem;}
+#mini_menu_wrap {width: 100%; height: 240px; height: 15rem;}
 .mini_menu {float: left; margin-right: 12px; margin-right: 0.878477vw; /* margin-right: 0.75rem; */ width: 180px; width: 13.177159vw; /* width: 11.25rem; */ height: inherit;}
 .mini_menu:last-child {margin-right: 0;}
 .imageM {width: 100%; height: 174px; background-repeat: no-repeat; background-size: cover; background-position: center; position: relative;}
