@@ -20,8 +20,6 @@ bigImg.removeClass('active');
 // 2. 큰 이미지 & 작은 이미지 연결
 
 var imgM = $('.imageM');
-var imgMLink = imgM.children('a');
-var bigLink = bigImg.find('a');
 var miniMenu = $('.mini_menu_wrap').children('div');
 var addrs = '../img/menu/';
 var miniImg = [
@@ -50,7 +48,7 @@ for(var e = 0; e < miniMenu.length; e+=1) {
 
 miniMenu.eq(e).children('a').css({backgroundImage:'url('+ addrs + miniImg[e].thums + '.png)',backgroundRepeat: 'no-repeat', backgroundSize:'contain', backgroundPosition:'center', transition: 'all 300ms'});
 
-};
+}
 
 imgshow(0);
 

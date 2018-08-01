@@ -8,7 +8,6 @@ var headBoxW = $('.headBox_wrap');
 var headBox = headBoxW.children('#headBox');
 var headLi = headBox.find('ul').children('li');
 var headOl = headBox.find('ol');
-var olLink = headOl.find('a');
 var timed = 500;
 
 headOl.hide();
@@ -34,8 +33,7 @@ headOl.removeClass('show');
 headLi.children('a').on('focus', function(e){
   $(this).next('ol').stop().slideDown(timed);
 });
-var headOlLi = headOl.children('li');
-// console.log(headOlLi);
+
 $.each(headOl,function(i,v){
   // console.log(i);
   var j = headOl.eq(i).children('li');
@@ -52,10 +50,7 @@ headOl.children('li').last().children('a').on('blur', function(e) {
 // 2.gnb 버튼 클릭 시 메뉴 펼쳐 보여주기(기기별 표시)
 var wind = $(window);
 var windWidth = wind.outerWidth();
-var navigation = $('#navigation_all');
 var gnb = $('#gnb');
-var gnbWrap = $('.gnb_wrap');
-var unbWrap = $('.unb_wrap');
 var gnbBtn = $('#drop_menu');
 
 gnb.hide();
@@ -69,7 +64,7 @@ gnb.stop().slideToggle();
 }else if (windWidth > 1024){
 gnbBtn.hide();
 gnb.show();
-};
+}
 
 
 $(window).on('resize', function(e) {
@@ -95,6 +90,26 @@ bannerLi.css({width:100 / abLength +'%'});
 var addr = "../img/adBox/";
 var image = ['banner01_pc.jpg','banner02_pc.jpg','banner03_pc.jpg'];
 
+// 디바이스 크기에 맞게 이미지 넣기---- 
+var w = $(window).width();
+
+if(w <= 480){
+  image = ['banner01_mobile.jpg', 'banner02_mobile.png', 'banner03_mobile.jpg'];
+}
+else if (w >= 481 && w <=768) {
+  image = ['banner01_tablet.jpg', 'banner02_tablet.jpg', 'banner03_tablet.jpg'];
+}
+
+$(window).on('resize', function(){
+  var nw = $(window).width();
+  if(w !== nw){
+ location.reload();
+    
+  }
+ });
+// ----------------------------------
+
+
 for(var i = 0; i<abLength; i+=1){
   if(i == abLength-1){
     bannerLi.eq(i).css({backgroundImage: 'url("'+ addr + image[0] +'")'}); 
@@ -111,7 +126,7 @@ for(var i = 0; i<abLength; i+=1){
 var indicator = $('.indicator');
 var indiLi    = indicator.find('li');
 var num       = 0;
-var timed     = 800; 
+var time     = 2000; 
 var CommonFn  = function(n){
   
   var move = n * -100 + '%';
@@ -120,7 +135,7 @@ var CommonFn  = function(n){
   console.log(n);
   if(n >= abLength-1){
     n=0;
-    bannerUl.stop().animate({marginLeft:move}, timed,function(){
+    bannerUl.stop().animate({marginLeft:move}, time,function(){
       bannerUl.css({marginLeft:0});
     });
    }else if(n < 0){
@@ -129,10 +144,10 @@ var CommonFn  = function(n){
     bannerUl.css({marginLeft:move});
     n-=1;
     move = n * -100 + '%';
-    bannerUl.stop().animate({marginLeft:move}, timed);
+    bannerUl.stop().animate({marginLeft:move}, time);
 
    }else{
-    bannerUl.stop().animate({marginLeft:move}, timed);
+    bannerUl.stop().animate({marginLeft:move}, time);
   }
     indiLi.eq(n).addClass('active');
     indiLi.eq(n).siblings('li').removeClass('active');
@@ -170,9 +185,9 @@ CommonFn(num);
        automove = setInterval(function(){
                   (num < abLength) ? num+=1 : num=0;
                   CommonFn(num);
-                }, timed*2);  
-     };
-  function StopSlide() {clearInterval( automove ); console.log('stop');};
+                }, time*2);  
+     }
+  function StopSlide() {clearInterval( automove ); console.log('stop');}
   AutoSlide();
 
   $('#adBox').on({mouseenter:StopSlide, mouseleave:AutoSlide});
@@ -187,7 +202,7 @@ var thisTop = $(this).scrollTop();
 console.log(thisTop);
 if (thisTop < 300) {
   topB.stop().fadeOut();
-}else {topB.stop().fadeIn();};
+}else {topB.stop().fadeIn();}
 
 });
 
