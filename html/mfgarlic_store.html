@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- fontawesome -->
-  <!-- <link rel="stylesheet" type="text/css" href="../fontawesome5/css/all.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <!-- import css -->
   <link rel="stylesheet" href="../css/base/reset.css" />
@@ -95,39 +95,48 @@
     </div>
 
   <!-- headBox ----------------------------------------- -->
-    <section id="search_store">
+    <section id="search_store" class="clearfix">
       <h2 class="hidden">매장찾기</h2>
       <p>방문하시려는 매장을 검색해 보세요.</p>
       <form action="#" method="post">
         <fieldset>
-          <input type="search" name="search_religion" id="search_r" placeholder="예: 명동">
-          <label for="search_r"></label>
+          <div id="search_r_wrap">
+            <input type="search" name="search_religion" id="search_r" placeholder="예: 명동">
+            <i class="fas fa-search fa-2x"></i>
+            <label for="search_r"></label>
+          </div>
 
-          <select name="select_city" id="select_c">
-            <option value="시/도">시/도</option>
-            <option value="강원">강원</option>
-            <option value="경기">경기</option>
-            <option value="경남">경남</option>
-            <option value="경북">경북</option>
-            <option value="광주">광주</option>
-            <option value="대구">대구</option>
-            <option value="대전">대전</option>
-            <option value="부산">부산</option>
-            <option value="서울">서울</option>
-            <option value="울산">울산</option>
-            <option value="인천">인천</option>
-            <option value="전남">전남</option>
-            <option value="전북">전북</option>
-            <option value="제주">제주</option>
-            <option value="충남">충남</option>
-            <option value="충북">충북</option>
-          </select>
-          <label for="select_c"></label>
-
-          <select name="select_" id="select_v">
-            <option value="구/군">구/군</option>
-          </select>
-          <label for="select_v"></label>
+          <div class="select_wrap">
+            <select name="select_city" id="select_c" class="select">
+              <option value="시/도">시/도</option>
+              <option value="강원">강원</option>
+              <option value="경기">경기</option>
+              <option value="경남">경남</option>
+              <option value="경북">경북</option>
+              <option value="광주">광주</option>
+              <option value="대구">대구</option>
+              <option value="대전">대전</option>
+              <option value="부산">부산</option>
+              <option value="서울">서울</option>
+              <option value="울산">울산</option>
+              <option value="인천">인천</option>
+              <option value="전남">전남</option>
+              <option value="전북">전북</option>
+              <option value="제주">제주</option>
+              <option value="충남">충남</option>
+              <option value="충북">충북</option>
+            </select>
+            <i class="fas fa-caret-down fa-2x"></i>
+            <label for="select_c"></label>
+          </div>
+          
+          <div class="select_wrap">
+            <select name="select_" id="select_v" class="select">
+              <option value="구/군">구/군</option>
+            </select>
+            <i class="fas fa-caret-down fa-2x"></i>
+            <label for="select_v"></label>
+          </div>
         </fieldset>
       </form>
 
@@ -253,11 +262,8 @@
           <a href="#"></a>
         </li>
       </ul>
-
-
+      <button type="button">더보기</button>
     </section>
-
-
 
 
     <!-- footBox------------------------------------- -->
