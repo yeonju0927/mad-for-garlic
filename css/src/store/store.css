@@ -1,21 +1,74 @@
 /*store.css*/
 
-#wrap {width: 100%; height: auto; background-color: #77a88d;}
+#wrap {width: 100%; height: auto; background-image: url("../../../img/store/store_background.png"); background-repeat: no-repeat; background-size: cover;}
 #search_store {margin: auto; width: 950px; width: 69.546120vw; height: auto; padding-top: 180px; padding-top: 11.25rem; margin-bottom: 3rem;}
-#search_store > p {font-size: 1.5rem; color: #fff; margin:20px 238px 82px 238px;}
-form {margin: 0 130px 3rem 130px;}
-#search_r_wrap {float: left; width: 200px; height: 70px; margin-right: 60px; background-color: #fff;}
+.text_area {width: 400px; height: 70px; height: 4.375rem; /*background-color: rgba(31,31,31,0.5);*/ margin: auto; padding: 1rem; box-sizing: border-box;}
+.text_area > p {margin: auto; width: 100%; /*width: 21.875rem; width: 25.622254vw;*/ font-size: 1.5rem; color: #fff;}
+
+form {margin: 2rem 130px 3rem 130px; margin: 2rem 9.516837vw 3rem 9.516837vw;}
+#search_r_wrap {float: left; width: 200px; width: 12.5rem; height: 70px; margin-right: 60px; background-color: #fff;}
 #search_r {width: 70%; height: 100%; text-indent: 2rem; font-size: 1.5rem; border: 0; float: left;}
-#search_r_wrap i {width: 20%; height: 80%; float: right; margin-top: 1.1rem; margin-right:10px;}
+#search_r_wrap > button {width: 20%; height: 70%; float: right; margin-top: 1rem; margin-right:10px; border: 0; padding: 0;}
+#search_r_wrap i {width: 100%; height: 100%; margin-top: 0.5rem; margin-top: 0.585651vw;}
 
-.select_wrap {float: left; width: 160px; height: 70px; background-color: #fff;}
-.select {width: 80%; height: 100%; border: 0; font-size: 1.5rem; text-indent: 2rem;}
-.select > i {width: 20%; height: 80%;}
+.select_wrap {float: left; width: 200px; height: 70px; background-color: #fff;}
+.select {width: 90%; height: 100%; border: 0; font-size: 1.5rem; text-indent: 2rem; background: url("../../../img/icon/arrowB.png") no-repeat 100% /30px 27px;}
+.city {margin-right: 2rem;}
+.store_img {width:100%; height: auto;}
+.store_img > li {float: left; width:20%; height: 150px; margin-right: 5%; margin-bottom: 1.5rem; background-color: #000; border: 5px solid #fff; box-sizing: border-box; position: relative;}
 
-.store_img {width:100%; height: auto; background-color: #f3e5f5;}
-.store_img > li {float: left; width:20%; height: 150px; margin-right: 5%; margin-bottom: 1.5rem; background-color: #fff;}
-.store_img > li:nth-child(4n) {margin-right: 0;}
 .store_img > li:last-child {margin-bottom: 0;}
 .store_img > li > a {display: block; width: 100%; height: 100%;}
+.store_img > li:hover {background-color: rgba(31,31,31,0.5);}
+.store_img > li.active:after {position: absolute; top:10%; left: 10%; display: block; content: " "; width: 80%; height: 80%;}
+.store_img > li.active:before {position: absolute; display: block;  left:8%; top:40%; width: 84%; height: 20%; background-color: #fff; line-height: 250%; text-align: center; font-size: 0.7rem; word-break: keep-all;}
 
-button {margin: auto; width: 140px; height: 50px; background-color: #fff; border: 1px solid #333; font-size: 1.3rem; font-weight: bold;}
+button.more {display: block; margin: auto; width: 140px; height: 50px; background-color: #fff; border: 1px solid #333; font-size: 1.3rem; font-weight: bold;}
+
+
+/* 매장 이름 리스트 */
+
+.store_img > li:nth-child(1).active:before  {content: "가산현대아울렛점";}
+.store_img > li:nth-child(2).active:before  {content: "강남삼성타운점";}
+.store_img > li:nth-child(3).active:before  {content: "건대스타시티점";}
+.store_img > li:nth-child(4).active:before  {content: "광주광천점";}
+.store_img > li:nth-child(5).active:before  {content: "광화문D타워점";}
+.store_img > li:nth-child(6).active:before  {content: "광화문점";}
+.store_img > li:nth-child(7).active:before  {content: "대구현대백화점";}
+.store_img > li:nth-child(8).active:before  {content: "대전둔산점";}
+.store_img > li:nth-child(9).active:before  {content: "도곡점";}
+.store_img > li:nth-child(10).active:before {content: "동탄센터포인트몰점";}
+.store_img > li:nth-child(11).active:before {content: "롯데시네마수원역점";}
+.store_img > li:nth-child(12).active:before {content: "롯데시네마월드타워점";}
+.store_img > li:nth-child(13).active:before {content: "마포점";}
+.store_img > li:nth-child(14).active:before {content: "명동점";}
+.store_img > li:nth-child(15).active:before {content: "목동점";}
+.store_img > li:nth-child(16).active:before {content: "발산점";}
+.store_img > li:nth-child(17).active:before {content: "봉은사로점";}
+.store_img > li:nth-child(18).active:before {content: "부천중동현대점";}
+.store_img > li:nth-child(19).active:before {content: "분당서현점";}
+.store_img > li:nth-child(20).active:before {content: "사당점";}
+.store_img > li:nth-child(21).active:before {content: "상암엠비씨점";}
+.store_img > li:nth-child(22).active:before {content: "수원인계점";}
+.store_img > li:nth-child(23).active:before {content: "안양범계점";}
+.store_img > li:nth-child(24).active:before {content: "여의도점";}
+.store_img > li:nth-child(25).active:before {content: "역삼점";}
+.store_img > li:nth-child(26).active:before {content: "영등포타임스퀘어점";}
+.store_img > li:nth-child(27).active:before {content: "예술의전당점";}
+.store_img > li:nth-child(28).active:before {content: "왕십리역사점";}
+.store_img > li:nth-child(29).active:before {content: "용산아이파크몰점";}
+.store_img > li:nth-child(30).active:before {content: "울산현대백화점";}
+.store_img > li:nth-child(31).active:before {content: "의정부점";}
+.store_img > li:nth-child(32).active:before {content: "인천송도점";}
+.store_img > li:nth-child(33).active:before {content: "일산웨스턴돔점";}
+.store_img > li:nth-child(34).active:before {content: "잠원점";}
+.store_img > li:nth-child(35).active:before {content: "창원점";}
+.store_img > li:nth-child(36).active:before {content: "천안신세계백화점충청점";}
+.store_img > li:nth-child(37).active:before {content: "판교라스트리트점";}
+.store_img > li:nth-child(38).active:before {content: "평택AK플라자점";}
+.store_img > li:nth-child(39).active:before {content: "합정점";}
+.store_img > li:nth-child(40).active:before {content: "해운대점";}
+
+
+/*.moreI {display: none;}
+.moreI.show {display: block;}*/

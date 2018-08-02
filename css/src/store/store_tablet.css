@@ -1,1 +1,19 @@
 /*store_tablet.css*/
+@media screen and (min-width:481px) and (max-width:768px) { 
+
+#search_store {margin: auto; width: 80%; height: auto; padding-top: 120px; padding-top: 7.5rem; margin-bottom: 2rem; background-color: #faf;}
+.text_area {padding: 0 2rem;}
+.text_area > p {width: 350px; font-size: 1.3rem; line-height: 4.375rem; ;}
+
+form {margin: 2rem 1rem 3rem 1rem;}
+#search_r_wrap {width: 35%; height: 50px; margin-right: 10%;}
+#search_r {width: 70%; font-size: 1rem; text-indent: 0.5rem;}
+#search_r_wrap > button {width: 20%; margin-top: 0.5rem; margin-right: 5px;}
+.select_wrap {width: 25%; height: 50px;}
+.select {width: 100%; font-size: 1rem; background-size: 20px 17px; background-position: 90%; text-indent: 0.5rem;}
+.city {margin-right: 5%;}
+.store_img {padding: 0 2%; box-sizing: border-box;}
+.store_img > li {width: 30%; height: 140px; margin-right: 5%;}
+.store_img > li:nth-child(3n) {margin-right: 0;}
+
+  }

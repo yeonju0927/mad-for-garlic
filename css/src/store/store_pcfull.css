@@ -1,3 +1,16 @@
 /*store_pcfull.css*/
 
-@media screen and (min-width:1367px) { }
+@media screen and (min-width:1367px) { 
+
+form {margin: 1.5rem 10rem 3rem 10rem;}
+
+#search_r_wrap {width: 30%; margin-right: 5%;}
+.select_wrap {width: 30%;}
+
+
+.store_img > li:nth-child(5n) {margin-right: 0;}
+.store_img {padding: 0 10%; box-sizing: border-box;}
+.store_img > li {width: 15%; }
+
+
+}
