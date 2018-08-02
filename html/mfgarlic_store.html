@@ -95,20 +95,24 @@
     </div>
 
   <!-- headBox ----------------------------------------- -->
+
     <section id="search_store" class="clearfix">
       <h2 class="hidden">매장찾기</h2>
-      <p>방문하시려는 매장을 검색해 보세요.</p>
+      <div class="text_area">
+        <p>방문하시려는 매장을 검색해 보세요.</p>
+      </div>
       <form action="#" method="post">
+        <h3 class="hidden">매장 검색(이름, 지역)</h3>
         <fieldset>
           <div id="search_r_wrap">
             <input type="search" name="search_religion" id="search_r" placeholder="예: 명동">
-            <i class="fas fa-search fa-2x"></i>
-            <label for="search_r"></label>
+             <button type="button"><i class="fas fa-search fa-2x"></i></button>
+            <label for="search_r" class="hidden">매장 이름을 입력하세요.</label>
           </div>
 
-          <div class="select_wrap">
+          <div class="select_wrap city">
             <select name="select_city" id="select_c" class="select">
-              <option value="시/도">시/도</option>
+              <option>시/도</option>
               <option value="강원">강원</option>
               <option value="경기">경기</option>
               <option value="경남">경남</option>
@@ -126,21 +130,19 @@
               <option value="충남">충남</option>
               <option value="충북">충북</option>
             </select>
-            <i class="fas fa-caret-down fa-2x"></i>
-            <label for="select_c"></label>
+            <label for="select_c" class="hidden">방문하시려는 매장의 시 또는 도를 선택하세요.</label>
           </div>
           
           <div class="select_wrap">
             <select name="select_" id="select_v" class="select">
-              <option value="구/군">구/군</option>
+              <option>구/군</option>
             </select>
-            <i class="fas fa-caret-down fa-2x"></i>
-            <label for="select_v"></label>
+            <label for="select_v" class="hidden">방문하시려는 매장의 구 또는 군을 선택하세요.</label>
           </div>
         </fieldset>
       </form>
 
-      <ul class="store_img">
+      <ul class="store_img clearfix">
         <li class="storeImg1">
           <a href="#"></a>
         </li>
@@ -201,68 +203,68 @@
         <li class="storeImg20">
           <a href="#"></a>
         </li>
-        <li class="storeImg21">
+        <li class="storeImg21 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg22">
+        <li class="storeImg22 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg23">
+        <li class="storeImg23 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg24">
+        <li class="storeImg24 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg25">
+        <li class="storeImg25 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg26">
+        <li class="storeImg26 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg27">
+        <li class="storeImg27 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg28">
+        <li class="storeImg28 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg29">
+        <li class="storeImg29 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg30">
+        <li class="storeImg30 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg31">
+        <li class="storeImg31 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg32">
+        <li class="storeImg32 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg33">
+        <li class="storeImg33 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg34">
+        <li class="storeImg34 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg35">
+        <li class="storeImg35 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg36">
+        <li class="storeImg36 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg37">
+        <li class="storeImg37 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg38">
+        <li class="storeImg38 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg39">
+        <li class="storeImg39 moreI">
           <a href="#"></a>
         </li>
-        <li class="storeImg40">
+        <li class="storeImg40 moreI">
           <a href="#"></a>
         </li>
       </ul>
-      <button type="button">더보기</button>
+      <button type="button" class="more">더보기</button>
     </section>
 
 
