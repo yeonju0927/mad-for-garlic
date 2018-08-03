@@ -95,7 +95,7 @@ $(this).removeClass('active');
 // 매장 이미지 넣기
 
 
-var addrs = '../../img/store/small/';
+var addrs = '../img/store/small/';
 var miniImg = [
 
 {image: 'store01', nar: '가산현대아울렛점'},
