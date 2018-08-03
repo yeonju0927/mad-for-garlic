@@ -1,5 +1,5 @@
 /*contentBox.css*/
-#wrap {width: 100%; height: auto; background-image: url("../../../img/introduce/garlic_light.png"); background-repeat: no-repeat; background-size: cover;}
+#wrap {width: 100%; height: auto; background-image: /*url("../../../img/introduce/garlic_light.png");*/ url("../../../img/introduce/pyeongtaeckAk.png"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
 
 
 /*----------------------------------------------------------*/
