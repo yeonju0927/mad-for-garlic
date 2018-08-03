@@ -1,6 +1,6 @@
 /*store.css*/
 
-#wrap {width: 100%; height: auto; background-image: url("../../../img/store/store_background.png"); background-repeat: no-repeat; background-size: cover;}
+#wrap {width: 100%; height: auto; background-image: url("../../../img/store/background.png"); background-repeat: no-repeat; background-size: cover;}
 #search_store {margin: auto; width: 950px; width: 69.546120vw; height: auto; padding-top: 180px; padding-top: 11.25rem; margin-bottom: 3rem;}
 .text_area {width: 400px; height: 70px; height: 4.375rem; /*background-color: rgba(31,31,31,0.5);*/ margin: auto; padding: 1rem; box-sizing: border-box;}
 .text_area > p {margin: auto; width: 100%; /*width: 21.875rem; width: 25.622254vw;*/ font-size: 1.5rem; color: #fff;}
@@ -15,19 +15,29 @@ form {margin: 2rem 130px 3rem 130px; margin: 2rem 9.516837vw 3rem 9.516837vw;}
 .select {width: 90%; height: 100%; border: 0; font-size: 1.5rem; text-indent: 2rem; background: url("../../../img/icon/arrowB.png") no-repeat 100% /30px 27px;}
 .city {margin-right: 2rem;}
 .store_img {width:100%; height: auto;}
-.store_img > li {float: left; width:20%; height: 150px; margin-right: 5%; margin-bottom: 1.5rem; background-color: #000; border: 5px solid #fff; box-sizing: border-box; position: relative;}
+.store_img > li {float: left; width:20%; height: 150px; margin-right: 5%; margin-bottom: 1.5rem; background-color: #000; border: 12px solid #fff; box-sizing: border-box; }
 
 .store_img > li:last-child {margin-bottom: 0;}
-.store_img > li > a {display: block; width: 100%; height: 100%;}
-.store_img > li:hover {background-color: rgba(31,31,31,0.5);}
-.store_img > li.active:after {position: absolute; top:10%; left: 10%; display: block; content: " "; width: 80%; height: 80%;}
-.store_img > li.active:before {position: absolute; display: block;  left:8%; top:40%; width: 84%; height: 20%; background-color: #fff; line-height: 250%; text-align: center; font-size: 0.7rem; word-break: keep-all;}
+.store_img > li > a {display: block; width: 100%; height: 100%; position: relative; transition: all 200ms linear;}
+.store_img > li > a:hover,.store_img > li > a:focus {background-color: rgba(31,31,31,0.7);}
+
+
+/*.store_img > li > a.active:after {content: " "; display: block; position: absolute; top:10%; left: 10%;  width: 80%; height: 80%;}*/
+/*.store_img > li > a.active:before {content:" "; position: absolute; display: block;  left:8%; top:40%; width: 84%; height: 20%; background-color: #fff; line-height: 250%; text-align: center; font-size: 0.7rem; word-break: keep-all;}*/
+
+.store_img > li > a > span{display: block; width: 80%; height:auto; position: absolute; top:50%; left: 10%;
+  background-color:rgba(255,255,255,0.9); text-align: center; padding-top: 0.5rem; padding-bottom: 0.5rem; word-break:keep-all;
+  transform:translateY(-50%); opacity: 0; transition: all 200ms linear; }
+
+.store_img > li > a:focus>span,
+.store_img > li > a.active>span {opacity: 1;}
+
 
 button.more {display: block; margin: auto; width: 140px; height: 50px; background-color: #fff; border: 1px solid #333; font-size: 1.3rem; font-weight: bold;}
 
 
 /* 매장 이름 리스트 */
-
+/*
 .store_img > li:nth-child(1).active:before  {content: "가산현대아울렛점";}
 .store_img > li:nth-child(2).active:before  {content: "강남삼성타운점";}
 .store_img > li:nth-child(3).active:before  {content: "건대스타시티점";}
@@ -69,6 +79,6 @@ button.more {display: block; margin: auto; width: 140px; height: 50px; backgroun
 .store_img > li:nth-child(39).active:before {content: "합정점";}
 .store_img > li:nth-child(40).active:before {content: "해운대점";}
 
-
+*/
 /*.moreI {display: none;}
 .moreI.show {display: block;}*/
