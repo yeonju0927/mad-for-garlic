@@ -1,5 +1,7 @@
 /* #adBox */
-#adBox {position: relative; padding-top: 142px; padding-top: 8.875rem; margin: auto; width: 950px; width: 59.375rem; height: 426px; height: 26.625rem; margin-bottom: 50px; margin-bottom: 3.125rem;}
+#wrap {background-image: url("../../../img/main_background3.png"); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#mainbox {margin: auto; width: 100%; height: auto ;padding-top: 142px; padding-top: 8.875rem;}
+#adBox {position: relative; width: 950px; width: 59.375rem; height: 426px; height: 26.625rem; margin-bottom: 50px; margin-bottom: 3.125rem; border: 5px solid rgba(255,255,255,0.8);}
 .indicator {position: absolute; bottom: 5%; left:50%; margin-left: -54px; margin-left: -3.953147vw; width: 108px; width: 7.906295vw; height: 28px; height: 1.75rem;}
 .indicator > ul {width: 108px; width: 7.906295vw; height: 100%;}
 .indicator > ul > li {float: left; width: 28px; width: 2.049780vw; height: 2.049780vw; margin-right: 12px; margin-right: 0.878477vw;  border-radius: 100%;}
