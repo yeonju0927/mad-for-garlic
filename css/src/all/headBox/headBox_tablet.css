@@ -14,7 +14,7 @@
 .gnb_wrap > li:first-child {margin-top: 0;}
 .gnb_wrap > li:last-child:after {content: "*고객지원 서비스는 PC버전에서만 이용 가능합니다."; display: block; margin-top: 5rem; font-size: 16px;}
 
-.gnb_wrap > li > a {width: auto; font-size: 20px; }
+.gnb_wrap > li > a {width: 30%; font-size: 20px; }
 .gnb_wrap  ol {position: absolute; left: 50%; top:0;}
 .gnb_wrap .membership ol {top:-1rem;}
 .gnb_wrap .membership ol> li{margin-bottom: 1.5rem;}
